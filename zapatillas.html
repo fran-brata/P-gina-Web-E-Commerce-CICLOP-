@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatillas</title>
+    <link rel="stylesheet" href="css/zapatillas.css">
+    <script>
+        function añadirAlCarrito(jeans) {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push(jeans);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert('Añadido al carrito');
+        }
+    </script>
+</head>
+<body> <!-- el "class" sera el mismo que el de los buzos-->
+    <h1>Zapatillas</h1>
+    <div class="buzos-container">
+        <div class="buzo">
+            <img src="img/zapatillas1.jpg" alt="Zapatilla 1">
+            <p>Zapatillas importadas NIKE Nk01 AIR Grafito (1).</p>
+            <p class="text-center">
+                Producto original de excelente calidad.
+                Las medidas del producto son cálculos aproximados. 
+                TALLES HOMBRE/MUJER - NiKE:
+                ARG	en CM (Largo de plantilla interna).
+                37,	No Disponible.
+                38,	25,5 cm.
+                39,	26 cm.
+                40,	27 cm.
+                41,	27,5 cm.
+                42, 28 cm.
+                43,	28,5cm.
+                44,	no dispobible.
+                45,	no disponible.
+            </p>
+         
+            <p>Precio: $15000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatilla 1', precio: 15000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/zapatillas2.jpg" alt="Zapatillas  2">
+            <p>Zapatillas ADIDAS CAMPUS 00s lila (2).</p>
+            <p class="text-center">Producto de imitación unisex.
+                Las medidas del producto son cálculos aproximados.
+                TALLES HOMBRE/MUJER ADD.
+                ARG en CM (Largo de plantilla interna).
+                35/36,	24 cm.
+                37/38,	25 cm.
+                39/40,	26 cm.
+                41,	27 cm.
+                42,	28 cm.
+                43,	29 cm.
+                44,	30 cm.
+                45,	30,5 cm.
+                46,	31 cm.
+
+            </p>
+            <p>Precio: $16000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatillas  2', precio: 16000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/zapatillas3.jpg" alt="Zapatillas  3">
+            <p>Zapatillas ADIDAS furum blanco y negro (3)</p>
+            <p class="text-center">
+                Producto de imitacion de excelente calidad.
+                Las medidas del producto son cálculos aproximados.
+                TALLES HOMBRE/MUJER - ADD.
+                ARG	en CM (Largo de plantilla interna)
+                35/36,	23,5cm.
+                37/38,	24,5 cm.
+                39/40,	26 cm.
+                41,	27 cm.
+                42,	28 cm.
+                43,	29 cm.
+                44,	30 cm.
+                45, no disponible.	 
+                46, no disponible.
+            </p>
+            <p>Precio: $15500</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatillas  3', precio: 15500})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/zapatillas4.jpg" alt="Zapatillas  4">
+            <p>Zapatillas importadas NIKE Nk01 blanca amarillo violeta lks (4).</p>
+            <p class="text-center">
+                Producto de imitacion de excelente calidad.
+                Las medidas del producto son cálculos aproximados.
+                TALLES HOMBRE/MUJER - NiKE.
+                ARG en CM (Largo de plantilla interna).
+                35/36,	24 cm.
+                37/38,	25 cm.
+                39/40,	26 cm.
+                41,	27 cm.
+                42,	28 cm.
+                43,	29 cm.
+                44,	29,5 cm.
+                45,	30 cm.
+                46,	31 cm.
+            </p>
+            <p>Precio: $17000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatillas  4', precio: 17000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/zapatillas5.jpg" alt="Zapatillas  5">
+            <p>Zapatillas importadas NIKE Nk01 AIR negro blanco (5).</p>
+            <p class="text-center">
+                Producto de imitacion de excelente calidad.
+                Las medidas del producto son cálculos aproximados.
+                TALLES HOMBRE/MUJER - NiKE.
+                ARG en	CM (Largo de plantilla interna).
+                35/36,	24 cm.
+                38,	25,5 cm.
+                39,	26 cm.
+                40,	27 cm.
+                41,	27,5 cm.
+                42,	28 cm.
+                43,	28,5cm.
+                44,	no dispobible.
+                45,	no disponible.
+            </p>
+            <p>Precio: $16500</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatillas  5', precio: 16500})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/zapatillas6.jpg" alt="Zapatillas  6">
+            <p>Zapatillas importadas NIKE Nk01 cuero marrón (6).</p>
+            <p class="text-center">
+                Producto de imitacion de excelente calidad.
+                Las medidas del producto son cálculos aproximados. 
+                TALLES HOMBRE/MUJER - ADIDAS.
+                ARG en	CM (Largo de plantilla interna).
+                37,	No Disponible.
+                38,	25,5 cm.
+                39,	26 cm.
+                40, 27 cm.
+                41,	27,5 cm.
+                42,	28 cm.
+                43,	28,5cm.
+                44, 29,5 cm.
+                45,	no disponible.
+            </p>
+            <p>Precio: $18000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatillas  6', precio: 18000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/zapatillas7.jpg" alt="Zapatillas 7">
+            <p>Zapatillas ADIDAS CAMPUS 00s negro (7).</p>
+            <p class="text-center">
+                Producto de imitacion de excelente calidad.
+                Las medidas del producto son cálculos aproximados. 
+                TALLES HOMBRE/MUJER - NiKE.
+                ARG en	CM (Largo de plantilla interna).
+                37,	No Disponible.
+                38,	25,5 cm.
+                39,	26 cm.
+                40, 27 cm.
+                41,	27,5 cm.
+                42,	28 cm.
+                43,	28,5cm.
+                44,	no dispobible.
+                45,	no disponible.
+            </p>
+            <p>Precio: $11000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Zapatillas  7', precio: 11000})">AÑADIR AL CARRITO</button>
+        </div>
+       
+    </div>
+    <a href="carrito.html">Ver Carrito</a>
+</body>
+</html>

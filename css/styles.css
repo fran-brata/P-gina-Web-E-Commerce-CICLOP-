@@ -1,0 +1,188 @@
+/* Estilos de fuente generales para todas las pantallas */
+body {  
+    font-family: "Playfair Display", serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+}
+
+/* Estilos específicos para pantallas grandes (PC) */
+@media (min-width: 769px) {
+    header {
+        margin-bottom: 40px;
+    }
+
+    .navbar {
+        border-radius: 5px;
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        color: #252b31;
+    }
+
+    .nav-link:hover {
+        color: #000000;
+    }
+
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    footer {
+        margin-top: 50px;
+    }
+
+    footer h5 {
+        font-weight: 700;
+    }
+    
+    footer p,
+    footer a {
+        color: #343a40;
+    }
+
+    /* Estilo de los botones del carrusel */
+    .carousel img {
+        width: auto;
+        height: auto;
+        max-height: auto; 
+        object-fit: cover; /* Usar cover para asegurar que la imagen ocupe todo el espacio disponible */
+    }
+
+    /* Asegurar que el contenedor del carrusel tenga posición relativa */
+    .carousel {
+        position: relative;
+    }
+
+    /* Estilo para los botones de navegación del carrusel */
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        top: 50%; /* Centrar verticalmente */
+        transform: translateY(-50%);
+        width: 50px; /* Ajuste del ancho */
+        height: 100%; 
+        background-color: rgba(211, 211, 211, 0.7); /* Color gris claro con transparencia */
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        z-index: 10; /* Asegurar que los botones estén encima de las imágenes */
+    }
+
+    .carousel-control-prev {
+        left: 0; 
+    }
+
+    .carousel-control-next {
+        right: 0; 
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px; /* Ajustar el tamaño del icono */
+        height: 30px;
+        background-size: 100%, 100%;
+    }
+
+    /* Estilos para los iconos */
+    .social-footer a {
+        font-size: 18px; /* Tamaño de los iconos */
+        color: #343a40; /* Color de los iconos */
+        margin-bottom: 10px; /* Espacio entre los iconos */
+        text-decoration: none; /* Sin subrayado en los enlaces */
+        display: block; /* Mostrar los iconos como bloques */
+    }
+
+    .comments-section {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-top: 2px solid #ccc;
+    }
+
+    .comments-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rating {
+        direction: rtl;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .rating input[type="radio"] {
+        display: none;
+    }
+
+    .rating label {
+        font-size: 2rem;
+        color: #ccc;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .rating input[type="radio"]:checked ~ label,
+    .rating label:hover,
+    .rating label:hover ~ label {
+        color: #f5b301;
+    }
+
+    .comment-box {
+        text-align: center;
+    }
+
+    .comment-box textarea {
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical;
+    }
+
+    button[type="submit"] {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #555;
+    }
+
+    #comments-display {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #comments-display .comment {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #comments-display .comment:last-child {
+        border-bottom: none;
+    }
+}

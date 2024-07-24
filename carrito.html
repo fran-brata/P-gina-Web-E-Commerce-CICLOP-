@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/carrito.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <script>
+        function mostrarCarrito() {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            let contenido = '';
+
+            carrito.forEach((item, index) => {
+                contenido += `
+                    <div class="carrito-item">
+                        <alt="${item.nombre}">
+                        <p>${item.nombre}</p>
+                        <p>Precio: $${item.precio}</p>
+                    </div>
+                `;
+            });
+
+            document.getElementById('carrito-contenido').innerHTML = contenido;
+
+            let total = carrito.reduce((acc, item) => acc + item.precio, 0);
+            document.getElementById('total').innerText = 'Total: $' + total;
+        }
+
+        function finalizarCompra() {
+            alert('Compra finalizada');
+            localStorage.removeItem('carrito');
+            window.location.href = 'finalizar.html';
+        }
+
+        window.onload = mostrarCarrito;
+    </script>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <div id="carrito-contenido"></div>
+    <p id="total"></p>
+    <button onclick="finalizarCompra()">FINALIZAR COMPRA</button>
+</body>
+</html>

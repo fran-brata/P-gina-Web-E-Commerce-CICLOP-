@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzos Oversize</title>
+    <link rel="stylesheet" href="css/buzos.css">
+    <script>
+        function añadirAlCarrito(buzo) {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push(buzo);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert('Añadido al carrito');
+        }
+    </script>
+</head>
+<body>
+    <h1>Buzos Oversize</h1>
+    <a href="index.html">Volver al inicio</a>
+    <div class="buzos-container">
+        <div class="buzo">
+            <img src="img/buzo1.jpg" alt="Buzo 1">
+            <p>Buzo frizado cálido y cómodo NEOZONE (1).</p>
+            <p class="text-center">Descripción:
+                Tela. Algodón Rustico Invisible sin lycra (PREMIUM)
+                
+                Talle. Único (L).
+                
+                
+                MEDIDAS
+                
+                Ancho hombros: 53cm
+                Contorno busto: 136cm
+                Contorno brazo: 66cm
+                Largo de manga: solo manga: 60cm/ desde el hombro: 77cm
+                Largo de torso: 70cm</p>
+            <p>Precio: $5000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 1', precio: 5000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo2.jpg" alt="Buzo 2">
+            <p>Buzo moderno y elegante PALM ANGELS (2).</p>
+            <p class="text-center">Descripción:
+                Tela. Algodón friza invisible PREMIUM
+                
+                Talle. Único (OVERSIZE).
+                
+                 MEDIDAS
+                
+                Ancho hombros: 53cm
+                Contorno busto: 138cm
+                Contorno brazo:50cm
+                Largo de manga: solo manga: 57cm/ desde el hombro:74cm
+                Largo de torso: 61cm</p>
+            <p>Precio: $6000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 2', precio: 6000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo3.jpg" alt="Buzo 3">
+            <p>Buzo frizado casual y versátil c/capucha ALAS (3).</p>
+            <p class="text-center">Descripción:
+                Tela. Algodón friza invisible PREMIUM
+                
+                Talle. Único (L).
+                
+                MEDIDAS
+                
+                Ancho hombros: 68cm
+                Contorno busto: 124cm
+                Contorno brazo: 34cm
+                Largo de manga: solo manga:43cm / desde el hombro: 65cm
+                Largo de torso: 64cm</p>
+            <p>Precio: $5500</p>
+        
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 3', precio: 5500})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo4.jpg" alt="Buzo 4">
+            <p>Buzo frizado con capucha ONLY NEED (4).</p>
+            <p class="text-center">Descripción:
+ 
+
+                Tela. Tela. Algodón friza invisible PREMIUM
+                
+                Talle. Único (L). 
+                 MEDIDAS
+                
+                Ancho hombros: 68cm
+                Contorno busto: 124cm
+                Contorno brazo: 34cm
+                Largo de manga: solo manga:43cm / desde el hombro: 65cm
+                Largo de torso: 64cm
+
+            </p>
+            <p>Precio: $7000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 4', precio: 7000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo5.jpg" alt="Buzo 5">
+            <p>Buzo frizado maxi canguro MOON (5).</p>
+            
+                Descripción:
+                Tela. Algodón friza invisible PREMIUM
+
+                    Talle. Único (XL).
+
+                       MEDIDAS
+
+                        Ancho hombros: 53cm
+                      Contorno busto: 134cm
+                       Contorno brazo: 48cm
+                     Largo de manga: solo manga:57cm / desde el hombro: 74cm
+                    Largo de torso:70cm
+            </p>
+            <p>Precio: $6500</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 5', precio: 6500})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo6.jpg" alt="Buzo 6">
+            <p>Buzo frizado con capucha MENTAL (6).</p>
+            <p class="text-center">Descripción:
+         Tela. Algodón friza invisible PREMIUM
+
+         Talle. Único (L).
+
+
+            MEDIDAS
+
+            Ancho hombros: 69cm
+            Contorno busto: 124cm
+             Contorno brazo: 48cm
+            Largo de manga: solo manga: 45cm/ desde el hombro:68cm
+            Largo de torso: 60cm
+        </p>
+            <p>Precio: $8000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 6', precio: 8000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo7.jpg" alt="Buzo 7">
+            <p>Buzo frizado maxi canguro the world (7).</p>
+            <p class="text-center">
+                Descripción:
+Tela. Algodón friza invisible PREMIUM
+
+Talle. Único (L).
+
+MEDIDAS
+
+Ancho hombros: 52cm
+Contorno busto: 136cm
+Contorno brazo:50cm
+Largo de manga: solo manga: 57cm/ desde el hombro:72cm
+Largo de torso: 70m
+            </p>
+            <p>Precio: $4500</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 7', precio: 4500})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo8.jpg" alt="Buzo 8">
+            <p>Buzo frizado AMSTERDAM (8).</p>
+            <p class="text-center">Descripción:
+                Tela. Algodón friza invisible PREMIUM
+                
+                Talle. Único (M).
+                
+                MEDIDAS
+                
+                Ancho hombros: 62cm
+                Contorno busto: 116cm
+                Contorno brazo: 40cm
+                Largo de manga: solo manga:46cm / desde el hombro: 66cm
+                Largo de torso: 53cm
+            </p>
+            <p>Precio: $7500</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 8', precio: 7500})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo9.jpg" alt="Buzo 9">
+            <p>Buzo frizado c/capucha IT'S OK (9).</p>
+            <p class="text-center">Descripción:
+                Tela. Algodón friza invisible PREMIUM
+                
+                Talle. Único (L).
+                
+                MEDIDAS
+                
+                Ancho hombros: 70cm
+                Contorno busto: 124cm
+                Contorno brazo: 38cm
+                Largo de manga: solo manga:47cm / desde el hombro: 71cm
+                Largo de torso: 62cm
+
+            </p>
+            <p>Precio: $5000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 9', precio: 5000})">AÑADIR AL CARRITO</button>
+        </div>
+        <div class="buzo">
+            <img src="img/buzo10.jpg" alt="Buzo 10.">
+            <p>Buzo frizado PARADISE (10).</p>
+            <p class="text-center">Descripción:
+                Tela. Algodón friza invisible PREMIUM
+                
+                Talle. Único (M).
+                
+                 MEDIDAS
+                
+                Ancho hombros: 61cm
+                Contorno busto: 116cm
+                Contorno brazo: 40cm
+                Largo de manga: solo manga: 46cm/ desde el hombro:68cm
+                Largo de torso: 52cm
+
+            </p>
+            <p>Precio: $5000</p>
+            <button onclick="añadirAlCarrito({nombre: 'Buzo 10', precio: 5000})">AÑADIR AL CARRITO</button>
+        </div>
+    </div>
+    <a href="carrito.html">Ver Carrito</a>
+</body>
+</html>
