@@ -66,3 +66,23 @@ a {
 a:hover {
     color: #d42525;
 }
+.btn-custom {
+    background-color: #000000; /* Tomate */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:hover {
+    background-color: #ff4500; /* Naranja Rojo */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
